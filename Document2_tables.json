@@ -1,0 +1,566 @@
+[
+    {
+        "page": 1,
+        "headers": "ConsignorStroudGL5 5EY,,Consignee,,Delivery Address,",
+        "raw_rows": [
+            [
+                "",
+                "Renishaw UK Sales LimitedBath RoadWoodchesterGLOUCESTERSHIREUNITED KINGDOMTel: 01453 525341Fax: 01453 524901E-mail: sales.office@renishaw.com",
+                "560058Cust No: 66255Currency: GBP",
+                "RENISHAW METROLOGY SYSTEMS LTDB378/1, RING ROAD1ST STAGE PEENYA INDUSTRIAL AREABENGALURU, BENGALURU URBANKARNATAKA, INDIATel: 00918053520144",
+                "560058INDIA",
+                "RENISHAW METROLOGY SYSTEMS LTDB378/1, RING ROAD1ST STAGE PEENYA INDUSTRIAL AREABENGALURU, BENGALURU URBAN KAR"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        ],
+        "processed_rows": [
+            [
+                "",
+                "Renishaw UK Sales LimitedBath RoadWoodchesterGLOUCESTERSHIREUNITED KINGDOMTel: 01453 525341Fax: 01453 524901E-mail: sales.office@renishaw.com",
+                "560058Cust No: 66255Currency: GBP",
+                "RENISHAW METROLOGY SYSTEMS LTDB378/1, RING ROAD1ST STAGE PEENYA INDUSTRIAL AREABENGALURU, BENGALURU URBANKARNATAKA, INDIATel: 00918053520144",
+                "560058INDIA",
+                "RENISHAW METROLOGY SYSTEMS LTDB378/1, RING ROAD1ST STAGE PEENYA INDUSTRIAL AREABENGALURU, BENGALURU URBAN KAR"
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        ],
+        "metadata": {
+            "accuracy": 81.94,
+            "whitespace": 66.67,
+            "order": 1,
+            "page": 1
+        }
+    },
+    {
+        "page": 1,
+        "headers": "CartonOrder NoPart NumberDescriptionUnit PriceQtySales ValueCustoms Value",
+        "raw_rows": [
+            [
+                "187.504750.00750.002401-629K176576/7A-1016-7626PL56V CABLE KITCountry of Origin: EC - SWEDEN85444290Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "4,354.7514,354.754,354.752401-631K178184/1A-5995-1000PH20 MT SYSTEM KIT 1Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "616.3731,849.111,849.112401-629K178184/1A-1371-1001TCR20 KITCountry of Origin: EC - IRELAND90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "24.79124.7924.792401-643K180268A-5004-7617TS27R HORIZONTAL HOLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "81.225406.10406.102401-643K180470/1A-2063-7001LPE1 EXTENSION BAR (Country of Origin: EC - IRELAND90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "processed_rows": [
+            [
+                "187.504750.00750.002401-629K176576/7A-1016-7626PL56V CABLE KITCountry of Origin: EC - SWEDEN85444290Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "4,354.7514,354.754,354.752401-631K178184/1A-5995-1000PH20 MT SYSTEM KIT 1Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "616.3731,849.111,849.112401-629K178184/1A-1371-1001TCR20 KITCountry of Origin: EC - IRELAND90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "24.79124.7924.792401-643K180268A-5004-7617TS27R HORIZONTAL HOLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "81.225406.10406.102401-643K180470/1A-2063-7001LPE1 EXTENSION BAR (Country of Origin: EC - IRELAND90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "metadata": {
+            "accuracy": 100.0,
+            "whitespace": 0.0,
+            "order": 2,
+            "page": 1
+        }
+    },
+    {
+        "page": 2,
+        "headers": "CartonOrder NoPart NumberDescriptionUnit PriceQtySales ValueCustoms Value",
+        "raw_rows": [
+            [
+                "17.38469.5269.522401-643K180470/1A-5000-7557M4 STY D8R L16 EWL16Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "20.00480.0080.002401-643K180471/2A-5004-0210M2 STY D1S L10 EWL4.Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "25.00125.0025.002401-643K180471/2A-5004-1017M2 STY D2SIN L20 EWLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "60.004240.00240.002401-629K180576A-9553-1226CABLE-LEMO/20WH 10MCountry of Origin: INDIA85444290Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "331.0041,324.001,324.002401-629K180576RA27FAA104B30LRESOLUTE FAN 27BITCountry of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "360.0051,800.001,800.002401-629K180644A-5923-0259MACHINE I/O - NOCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "18.68118.6818.682401-643K180706/2A-5003-0055M3 STY D2.5R L30 EWLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "3.5013.503.502401-643K180757A-9585-0028RTL GLUE CLAMP KITCountry of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "157.501157.50157.502401-643K180757T2011-50ATONIC READHEAD 5M RECountry of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "11.81111.8111.812401-643K180757A-6567-0004RTLC40-S 40MM LONGCountry of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "processed_rows": [
+            [
+                "17.38469.5269.522401-643K180470/1A-5000-7557M4 STY D8R L16 EWL16Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "20.00480.0080.002401-643K180471/2A-5004-0210M2 STY D1S L10 EWL4.Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "25.00125.0025.002401-643K180471/2A-5004-1017M2 STY D2SIN L20 EWLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "60.004240.00240.002401-629K180576A-9553-1226CABLE-LEMO/20WH 10MCountry of Origin: INDIA85444290Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "331.0041,324.001,324.002401-629K180576RA27FAA104B30LRESOLUTE FAN 27BITCountry of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "360.0051,800.001,800.002401-629K180644A-5923-0259MACHINE I/O - NOCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "18.68118.6818.682401-643K180706/2A-5003-0055M3 STY D2.5R L30 EWLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "3.5013.503.502401-643K180757A-9585-0028RTL GLUE CLAMP KITCountry of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "157.501157.50157.502401-643K180757T2011-50ATONIC READHEAD 5M RECountry of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "11.81111.8111.812401-643K180757A-6567-0004RTLC40-S 40MM LONGCountry of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "metadata": {
+            "accuracy": 100.0,
+            "whitespace": 0.0,
+            "order": 1,
+            "page": 2
+        }
+    },
+    {
+        "page": 3,
+        "headers": "CartonOrder NoPart NumberDescriptionUnit PriceQtySales ValueCustoms Value",
+        "raw_rows": [
+            [
+                "146.901146.90146.902401-643K180757Q4BCA10L00TQUANTIC40 RTLC 1VPPCountry of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50245.0045.002401-643K180851/1A-5004-0423M3 STY D4R L10 EWL7Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "1,449.0011,449.001,449.002401-642K180944A-2181-0624HPMA 15\"CHK S/E KITCountry of Origin: INDIA90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "388.752777.50777.502401-643K181171RA26BTA115B05FRESOLUTE ETR BISS 26Country of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "45.67291.3491.342401-643K181520A-5000-9761M4 STY D5R L100 EWL8Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "21.89243.7843.782401-643K181520A-5003-0059M3 STY D3R L50 EWL43Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50122.5022.502401-643K181520A-5003-2932M4 STY D2R L20 EWL10Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50122.5022.502401-643K181520A-5003-4793M4 STY D3R L20 EWL8.Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.3219.329.322401-643K181520A-5004-7608M4 ACC SWIVEL L1-13.Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.631096.3096.302401-643K181520A-5004-7621M4 CPD L12SLVSCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "processed_rows": [
+            [
+                "146.901146.90146.902401-643K180757Q4BCA10L00TQUANTIC40 RTLC 1VPPCountry of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50245.0045.002401-643K180851/1A-5004-0423M3 STY D4R L10 EWL7Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "1,449.0011,449.001,449.002401-642K180944A-2181-0624HPMA 15\"CHK S/E KITCountry of Origin: INDIA90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "388.752777.50777.502401-643K181171RA26BTA115B05FRESOLUTE ETR BISS 26Country of Origin: UNITED KINGDOM90318080Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "45.67291.3491.342401-643K181520A-5000-9761M4 STY D5R L100 EWL8Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "21.89243.7843.782401-643K181520A-5003-0059M3 STY D3R L50 EWL43Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50122.5022.502401-643K181520A-5003-2932M4 STY D2R L20 EWL10Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50122.5022.502401-643K181520A-5003-4793M4 STY D3R L20 EWL8.Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.3219.329.322401-643K181520A-5004-7608M4 ACC SWIVEL L1-13.Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.631096.3096.302401-643K181520A-5004-7621M4 CPD L12SLVSCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "metadata": {
+            "accuracy": 100.0,
+            "whitespace": 0.0,
+            "order": 1,
+            "page": 3
+        }
+    },
+    {
+        "page": 4,
+        "headers": "CartonOrder NoPart NumberDescriptionUnit PriceQtySales ValueCustoms Value",
+        "raw_rows": [
+            [
+                "24.0015360.00360.002401-643K181799A-5003-4797M4 STY D2R L50 EWL40Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "60.00160.0060.002401-643K181799A-5003-7678M6 STY D3Z L43Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "20.4310204.30204.302401-643K181949A-5003-0035M2 STY D1.5R L30 EWLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50490.0090.002401-643K181951A-5003-2764M4 STY D6R L75 EWL63Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "32.50132.5032.502401-643K181951A-5003-5241M5 STY D0.5R L75 EWLCountry of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "30.00130.0030.002401-643K181951A-5003-5243M5 STY D1R L75 EWL5Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "37.50137.5037.502401-643K181951A-5003-5254M5 STY D3R L100 EWL5Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "388.001388.00388.002401-643K181951A-5003-5912M5 STYLUS EXT KIT-11Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "1,575.0011,575.001,575.002401-629K181953/1A-2237-1105SM25-5 MODULE KITCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "32.1015481.50481.502401-629K181953/1A-5000-7727M4 EXT L100 d7.4CECountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "processed_rows": [
+            [
+                "24.0015360.00360.002401-643K181799A-5003-4797M4 STY D2R L50 EWL40Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "60.00160.0060.002401-643K181799A-5003-7678M6 STY D3Z L43Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "20.4310204.30204.302401-643K181949A-5003-0035M2 STY D1.5R L30 EWLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50490.0090.002401-643K181951A-5003-2764M4 STY D6R L75 EWL63Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "32.50132.5032.502401-643K181951A-5003-5241M5 STY D0.5R L75 EWLCountry of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "30.00130.0030.002401-643K181951A-5003-5243M5 STY D1R L75 EWL5Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "37.50137.5037.502401-643K181951A-5003-5254M5 STY D3R L100 EWL5Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "388.001388.00388.002401-643K181951A-5003-5912M5 STYLUS EXT KIT-11Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "1,575.0011,575.001,575.002401-629K181953/1A-2237-1105SM25-5 MODULE KITCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "32.1015481.50481.502401-629K181953/1A-5000-7727M4 EXT L100 d7.4CECountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "metadata": {
+            "accuracy": 100.0,
+            "whitespace": 0.0,
+            "order": 1,
+            "page": 4
+        }
+    },
+    {
+        "page": 5,
+        "headers": "CartonOrder NoPart NumberDescriptionUnit PriceQtySales ValueCustoms Value",
+        "raw_rows": [
+            [
+                "9.3219.329.322401-629K181953/1A-5004-7608M4 ACC SWIVEL L1-13.Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "47.49147.4947.492401-629K181953/1A-5103-4370XM POWER SUPPLY KITCountry of Origin: UNITED KINGDOM85044095Commodity CodeExport CPC    10 00 001 It is confirmed that this item is not controlled/ dual use"
+            ],
+            [
+                "38.014152.04152.042401-643K181955A-5000-3626M2 STR D2 5BALL L19.Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "18.39236.7836.782401-643K181955A-5000-7792M4 ACC CENTRE 5WAYCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "15.20576.0076.002401-643K181955A-5000-7808M2 STY D1R L20 EWL7Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "26.776160.62160.622401-643K181955A-5000-8156M4 STY D6R L150 EWL1Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "21.89243.7843.782401-643K181955A-5003-0044M2 STY D4R L40 EWL40Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "18.68237.3637.362401-643K181955A-5003-0052M3 STY D2R L30 EWL22Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "21.89243.7843.782401-643K181955A-5003-0058M3 STY D3R L40 EWL33Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "21.89243.7843.782401-643K181955A-5003-0061M3 STY D4R L50 EWL46Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "processed_rows": [
+            [
+                "9.3219.329.322401-629K181953/1A-5004-7608M4 ACC SWIVEL L1-13.Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "47.49147.4947.492401-629K181953/1A-5103-4370XM POWER SUPPLY KITCountry of Origin: UNITED KINGDOM85044095Commodity CodeExport CPC    10 00 001 It is confirmed that this item is not controlled/ dual use"
+            ],
+            [
+                "38.014152.04152.042401-643K181955A-5000-3626M2 STR D2 5BALL L19.Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "18.39236.7836.782401-643K181955A-5000-7792M4 ACC CENTRE 5WAYCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "15.20576.0076.002401-643K181955A-5000-7808M2 STY D1R L20 EWL7Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "26.776160.62160.622401-643K181955A-5000-8156M4 STY D6R L150 EWL1Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "21.89243.7843.782401-643K181955A-5003-0044M2 STY D4R L40 EWL40Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "18.68237.3637.362401-643K181955A-5003-0052M3 STY D2R L30 EWL22Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "21.89243.7843.782401-643K181955A-5003-0058M3 STY D3R L40 EWL33Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "21.89243.7843.782401-643K181955A-5003-0061M3 STY D4R L50 EWL46Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "metadata": {
+            "accuracy": 100.0,
+            "whitespace": 0.0,
+            "order": 1,
+            "page": 5
+        }
+    },
+    {
+        "page": 6,
+        "headers": "CartonOrder NoPart NumberDescriptionUnit PriceQtySales ValueCustoms Value",
+        "raw_rows": [
+            [
+                "24.52124.5224.522401-643K181955A-5003-0068M3 STY D4R L50 EWL46Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "27.84255.6855.682401-643K181955A-5003-2281M2 EXT L50 d3CFCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "20.00240.0040.002401-643K181955A-5003-4792M4 STY D1R L20 EWL10Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "12.50337.5037.502401-643K181955A-5003-5171M4 CPD L15.2SLVS TS2Country of Origin: EC - IRELAND90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "115.002230.00230.002401-643K181955A-5003-6152M3 STYLUS KIT SP25M2Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "Kit - customs values held at component level58.50158.502401-643K181955A-5004-1865A-5004-7443 IN58.50PACK OF 10 OFFConsists of the following components:A-5004-7443M4 STY BREAK STEM L1Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.00218.0018.002401-643K181955A-5555-0020M5 STY D3R L50 ML40Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.00545.0045.002401-643K181955A-5555-0021M5 STY D3R L58 ML48Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "23.161002,316.002,316.002401-643K181956A-5000-3712M4 STY D6R L100 EWL8Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "processed_rows": [
+            [
+                "24.52124.5224.522401-643K181955A-5003-0068M3 STY D4R L50 EWL46Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "27.84255.6855.682401-643K181955A-5003-2281M2 EXT L50 d3CFCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "20.00240.0040.002401-643K181955A-5003-4792M4 STY D1R L20 EWL10Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "12.50337.5037.502401-643K181955A-5003-5171M4 CPD L15.2SLVS TS2Country of Origin: EC - IRELAND90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "115.002230.00230.002401-643K181955A-5003-6152M3 STYLUS KIT SP25M2Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "Kit - customs values held at component level58.50158.502401-643K181955A-5004-1865A-5004-7443 IN58.50PACK OF 10 OFFConsists of the following components:A-5004-7443M4 STY BREAK STEM L1Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.00218.0018.002401-643K181955A-5555-0020M5 STY D3R L50 ML40Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.00545.0045.002401-643K181955A-5555-0021M5 STY D3R L58 ML48Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "23.161002,316.002,316.002401-643K181956A-5000-3712M4 STY D6R L100 EWL8Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "metadata": {
+            "accuracy": 100.0,
+            "whitespace": 0.0,
+            "order": 1,
+            "page": 6
+        }
+    },
+    {
+        "page": 7,
+        "headers": "CartonOrder NoPart NumberDescriptionUnit PriceQtySales ValueCustoms Value",
+        "raw_rows": [
+            [
+                "20.43481.7281.722401-643K181956A-5003-0051M3 STY D1.5R L30 EWLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "852.7221,705.441,705.442401-643K182062A-2063-6098LP2 PROBE KITCountry of Origin: EC - IRELAND90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50122.5022.502401-643K182062A-5003-2932M4 STY D2R L20 EWL10Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "20.00120.0020.002401-643K182062A-5003-5215M5 STY D1.5R L30 EWLCountry of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.00218.0018.002401-643K182062A-5555-0019M5 ST D3R L33.5 ML23Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.00545.0045.002401-643K182062A-5555-0114D2R BSTEM L27 D1.5Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "1,433.0034,299.004,299.002401-643K182062A-5742-0001RMP60 (Q) RADIO/RADICountry of Origin: EC - IRELANDA123THIS PRODUCT CONTAINS BATTERIES THAT ARE NOT RESTRICTED FOR TRANSPORTATION  BY AIR AND MEET THE REQUIREMENTS OF IATA DGR SPECIAL PROVISION A123 'NOT RESTRICTED AS PER SPECIAL PROVISION A123'90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50245.0045.002401-643K182064A-5003-2764M4 STY D6R L75 EWL63Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "15.2020304.00304.002401-643K182161A-5000-7808M2 STY D1R L20 EWL7Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "20.4320408.60408.602401-643K182161A-5003-0035M2 STY D1.5R L30 EWLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "processed_rows": [
+            [
+                "20.43481.7281.722401-643K181956A-5003-0051M3 STY D1.5R L30 EWLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "852.7221,705.441,705.442401-643K182062A-2063-6098LP2 PROBE KITCountry of Origin: EC - IRELAND90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50122.5022.502401-643K182062A-5003-2932M4 STY D2R L20 EWL10Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "20.00120.0020.002401-643K182062A-5003-5215M5 STY D1.5R L30 EWLCountry of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.00218.0018.002401-643K182062A-5555-0019M5 ST D3R L33.5 ML23Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "9.00545.0045.002401-643K182062A-5555-0114D2R BSTEM L27 D1.5Country of Origin: EC - GERMANY90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "1,433.0034,299.004,299.002401-643K182062A-5742-0001RMP60 (Q) RADIO/RADICountry of Origin: EC - IRELANDA123THIS PRODUCT CONTAINS BATTERIES THAT ARE NOT RESTRICTED FOR TRANSPORTATION  BY AIR AND MEET THE REQUIREMENTS OF IATA DGR SPECIAL PROVISION A123 'NOT RESTRICTED AS PER SPECIAL PROVISION A123'90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "22.50245.0045.002401-643K182064A-5003-2764M4 STY D6R L75 EWL63Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "15.2020304.00304.002401-643K182161A-5000-7808M2 STY D1R L20 EWL7Country of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ],
+            [
+                "20.4320408.60408.602401-643K182161A-5003-0035M2 STY D1.5R L30 EWLCountry of Origin: UNITED KINGDOM90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "metadata": {
+            "accuracy": 100.0,
+            "whitespace": 0.0,
+            "order": 1,
+            "page": 7
+        }
+    },
+    {
+        "page": 8,
+        "headers": "CartonOrder NoPart NumberDescriptionUnit PriceQtySales ValueCustoms Value",
+        "raw_rows": [
+            [
+                "120.002240.00240.002401-643K182282A-6078-0269EQ500 PROBE FFC KITCountry of Origin: EC - IRELAND90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "processed_rows": [
+            [
+                "120.002240.00240.002401-643K182282A-6078-0269EQ500 PROBE FFC KITCountry of Origin: EC - IRELAND90319000Commodity CodeExport CPC    10 00 001"
+            ]
+        ],
+        "metadata": {
+            "accuracy": 100.0,
+            "whitespace": 0.0,
+            "order": 1,
+            "page": 8
+        }
+    }
+]

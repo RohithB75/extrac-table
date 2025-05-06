@@ -1,0 +1,11 @@
+PyMuPDF
+camelot-py
+opencv-python
+paddleocr
+pytesseract
+Pillow
+pandas
+numpy
+tabulate
+click
+joblib
