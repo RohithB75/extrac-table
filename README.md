@@ -77,7 +77,7 @@ python cli.py path/to/your.pdf \
 Create a `.env` file in the project root:
 
 ```env
-USE_GPU=true  # Enable GPU acceleration for PaddleOCR
+api key
 ```
 
 ## Implementation Details
