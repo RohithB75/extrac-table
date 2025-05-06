@@ -1,103 +1,128 @@
 import os
-import requests # pip install requests
+import sys
+import requests
+import json
 
-# The authentication key (API Key).
-# Get your own by registering at https://app.pdf.co
-API_KEY =""
-
-# Base URL for PDF.co Web API requests
+API_KEY  = ""      # ← replace with your PDF.co key
 BASE_URL = "https://api.pdf.co/v1"
 
-# Source PDF file
-SourceFile = ""
-# Comma-separated list of page indices (or ranges) to process. Leave empty for all pages. Example: '0,2-5,7-'.
-Pages = ""
-# PDF document password. Leave empty for unprotected documents.
-Password = ""
-# OCR language. "eng", "fra", "deu", "spa"  supported currently. Let us know if you need more.
-Language = "eng"
-# Destination PDF file name
-DestinationFile = ".\\digital.pdf"
+def upload_file(path):
+    url = f"{BASE_URL}/file/upload"
+    resp = requests.post(url,
+        headers={"x-api-key": API_KEY},
+        files={"file": open(path,"rb")}
+    )
+    resp.raise_for_status()
+    j = resp.json()
+    if j.get("error"):
+        raise RuntimeError("Upload failed: " + j.get("message",""))
+    return j["url"]
 
+def make_searchable(url, name):
+    ep = f"{BASE_URL}/pdf/makesearchable"
+    payload = {"url": url, "name": name}
+    resp = requests.post(ep,
+        headers={"x-api-key": API_KEY, "Content-Type":"application/json"},
+        json=payload
+    )
+    resp.raise_for_status()
+    j = resp.json()
+    if j.get("error"):
+        raise RuntimeError("MakeSearchable: " + j.get("message",""))
+    return j["url"]
 
-def main(args = None):
-    uploadedFileUrl = uploadFile(SourceFile)
-    if (uploadedFileUrl != None):
-        makeSearchablePDF(uploadedFileUrl, DestinationFile)
+def download_file(url, dest):
+    resp = requests.get(url)
+    resp.raise_for_status()
+    with open(dest, "wb") as f:
+        f.write(resp.content)
 
+def extract_to_json2(url):
+    ep = f"{BASE_URL}/pdf/convert/to/json2"
+    payload = {"url": url, "inline": True}
+    resp = requests.post(ep,
+        headers={"x-api-key": API_KEY, "Content-Type":"application/json"},
+        json=payload
+    )
+    resp.raise_for_status()
+    j = resp.json()
+    if j.get("error"):
+        raise RuntimeError("Convert-to-JSON2: " + j.get("message",""))
+    return j["body"]  # this has .document.page
 
-def makeSearchablePDF(uploadedFileUrl, destinationFile):
-    """Make Uploaded PDF file Searchable using PDF.co Web API"""
+def parse_json2_tables(body):
+    """
+    body = {
+      "document": {
+        "pageCount": "...",
+        "pageCountWithOCRPerformed": "...",
+        "page": [ { index, row: [ { column: [ {text or text{text} } ... ] } ... ] }, ... ]
+      }
+    }
+    """
+    docs = body.get("document", {})
+    pages = docs.get("page")
+    if isinstance(pages, dict):
+        pages = [pages]
+    results = []
+    for pg in pages:
+        idx = int(pg.get("index", 0)) + 1  # 1-based page number
+        rows = pg.get("row", [])
+        if not rows:
+            continue
+        # Build matrix of text
+        mat = []
+        for r in rows:
+            cols = []
+            for cell in r.get("column", []):
+                # cell["text"] may be string or object
+                txt = cell.get("text", "")
+                if isinstance(txt, dict):
+                    txt = txt.get("text","")
+                cols.append(txt.strip())
+            mat.append(cols)
+        # First row = headers
+        headers = mat[0]
+        data    = mat[1:]
+        results.append({
+            "page":    idx,
+            "headers": headers,
+            "rows":    data
+        })
+    return results
 
-    # Prepare requests params as JSON
-    # See documentation: https://apidocs.pdf.co
-    parameters = {}
-    parameters["name"] = os.path.basename(destinationFile)
-    parameters["password"] = Password
-    parameters["pages"] = Pages
-    parameters["lang"] = Language
-    parameters["url"] = uploadedFileUrl
+def main():
+    if len(sys.argv)!=2:
+        print("Usage: python convert_and_parse.py scanned.pdf")
+        sys.exit(1)
 
-    # Prepare URL for 'Make Searchable PDF' API request
-    url = "{}/pdf/makesearchable".format(BASE_URL)
+    inp = sys.argv[1]
+    if not os.path.exists(inp):
+        print("Not found:", inp); sys.exit(1)
 
-    # Execute request and get response as JSON
-    response = requests.post(url, data=parameters, headers={ "x-api-key": API_KEY })
-    if (response.status_code == 200):
-        json = response.json()
+    print("1️⃣ Uploading…")
+    up_url = upload_file(inp)
 
-        if json["error"] == False:
-            #  Get URL of result file
-            resultFileUrl = json["url"]            
-            # Download result file
-            r = requests.get(resultFileUrl, stream=True)
-            if (r.status_code == 200):
-                with open(destinationFile, 'wb') as file:
-                    for chunk in r:
-                        file.write(chunk)
-                print(f"Result file saved as \"{destinationFile}\" file.")
-            else:
-                print(f"Request error: {response.status_code} {response.reason}")
-        else:
-            # Show service reported error
-            print(json["message"])
-    else:
-        print(f"Request error: {response.status_code} {response.reason}")
+    base,name = os.path.splitext(os.path.basename(inp))
+    searchable_name = f"{base}_searchable.pdf"
 
+    print("2️⃣ OCR→ searchable PDF…")
+    searchable_url = make_searchable(up_url, searchable_name)
 
-def uploadFile(fileName):
-    """Uploads file to the cloud"""
-    
-    # 1. RETRIEVE PRESIGNED URL TO UPLOAD FILE.
+    print("3️⃣ Downloading searchable PDF…")
+    download_file(searchable_url, searchable_name)
+    print("   Saved:", searchable_name)
 
-    # Prepare URL for 'Get Presigned URL' API request
-    url = "{}/file/upload/get-presigned-url?contenttype=application/octet-stream&name={}".format(
-        BASE_URL, os.path.basename(fileName))
-    
-    # Execute request and get response as JSON
-    response = requests.get(url, headers={ "x-api-key": API_KEY })
-    if (response.status_code == 200):
-        json = response.json()
-        
-        if json["error"] == False:
-            # URL to use for file upload
-            uploadUrl = json["presignedUrl"]
-            # URL for future reference
-            uploadedFileUrl = json["url"]
+    print("4️⃣ Extracting tables via JSON2…")
+    body = extract_to_json2(searchable_url)
 
-            # 2. UPLOAD FILE TO CLOUD.
-            with open(fileName, 'rb') as file:
-                requests.put(uploadUrl, data=file, headers={ "x-api-key": API_KEY, "content-type": "application/octet-stream" })
+    print("5️⃣ Parsing tables…")
+    tables = parse_json2_tables(body)
 
-            return uploadedFileUrl
-        else:
-            # Show service reported error
-            print(json["message"])    
-    else:
-        print(f"Request error: {response.status_code} {response.reason}")
+    out = "parsed_tables.json"
+    with open(out,"w") as f:
+        json.dump(tables, f, indent=4)
+    print("✅ Parsed tables written to", out)
 
-    return None
-
-
-if __name__ == '_main_':
+if __name__=="__main__":
     main()
