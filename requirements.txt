@@ -9,3 +9,5 @@ numpy
 tabulate
 click
 joblib
+requests
+paddlepaddle
