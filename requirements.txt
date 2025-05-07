@@ -11,3 +11,4 @@ click
 joblib
 requests
 paddlepaddle
+dotenv
