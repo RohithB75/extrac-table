@@ -11,15 +11,40 @@ import json
 import pandas as pd
 from tabulate import tabulate
 
+#Add a check to validate the page numbers before processing:
+def validate_pages(pdf_path, pages):
+    print(f"Processing pages: {pages}")
+    doc = fitz.open(pdf_path)
+    total_pages = doc.page_count
+    return [p for p in pages if 1 <= p <= total_pages]
+# Function to parse pages (range like 1-3,5)
+# Ensure temporary files are properly closed and deleted after use.
+import shutil
+import tempfile
+import fitz  # Assuming PyMuPDF is being used for PDF handling
+
+tempdir = tempfile.mkdtemp()
+try:
+    # Your processing code here
+    pass  # Placeholder for actual processing code
+finally:
+    shutil.rmtree(tempdir, ignore_errors=True)
+
+# Add a check to validate the page numbers before processing:
+def validate_pages(pdf_path, pages):
+    doc = fitz.open(pdf_path)
+    total_pages = doc.page_count
+    return [p for p in pages if 1 <= p <= total_pages]
+
 # Function to parse pages (range like 1-3,5)
 def parse_pages(pages_str):
     pages = set()
     for part in pages_str.split(','):
         part = part.strip()
-        if '-' in part:
-            start, end = part.split('-')
-            pages.update(range(int(start), int(end)+1))
-        else:
+        if '-' in part:  # Handle ranges like 1-3
+            start, end = map(int, part.split('-'))
+            pages.update(range(start, end + 1))
+        else:  # Handle single pages like 5
             pages.add(int(part))
     return sorted(pages)
 
@@ -32,9 +57,16 @@ def is_scanned(pdf_path, page_no=0):
 
 # Extract tables from digital PDFs (Camelot)
 def extract_tables_digital(pdf_path, pages):
+    doc = fitz.open(pdf_path)
+    total_pages = doc.page_count
+    pages = [p for p in pages if 1 <= p <= total_pages]  # Validate pages
+
+    if not pages:
+        raise ValueError(f"No valid pages to process in {pdf_path}")
+
     tables = []
     page_str = ",".join(map(str, pages))
-    
+
     # Try flavor="lattice" (for grid-like tables)
     camelot_tables = camelot.read_pdf(pdf_path, pages=page_str, flavor="lattice", strip_text="\n")
     
@@ -48,15 +80,15 @@ def extract_tables_digital(pdf_path, pages):
         if df.empty:
             print(f"No valid data found on page {tbl.page}")  # Debug print for empty tables
             continue
-        
+
         # Extract headers
         headers = df.iloc[0].tolist()  # First row as headers
         raw_rows = df.iloc[1:].values.tolist()  # All rows below header
-        
+
         # Clean headers
         headers = [header.strip().replace("\n", " ").replace(",", "") for header in headers]  # Clean headers
         headers_str = ",".join(headers)  # Join headers as a comma-separated string
-        
+
         tables.append({
             'page': tbl.page,
             'headers': headers_str,  # Save headers as a comma-separated string
@@ -64,7 +96,7 @@ def extract_tables_digital(pdf_path, pages):
             'processed_rows': raw_rows,  # Processed rows (same as raw for now)
             'metadata': tbl.parsing_report
         })
-    
+
     return tables
 
 # Extract tables from scanned PDFs using PaddleOCR + Tesseract fallback
@@ -117,30 +149,39 @@ def extract_tables_scanned(pdf_path, pages, ocr):
     return tables
 
 # Process a single PDF
-def process_pdf(pdf_path, pages, output_format, ocr):
-    scanned = is_scanned(pdf_path, page_no=pages[0] - 1)
-    if scanned:
-        tables = extract_tables_scanned(pdf_path, pages, ocr)
-    else:
-        tables = extract_tables_digital(pdf_path, pages)
+import tempfile
+import shutil
 
-    base = os.path.splitext(os.path.basename(pdf_path))[0]
-    out_file = f"{base}_tables.{ 'json' if output_format=='json' else 'md' }"
-    
-    if output_format == 'json':
-        with open(out_file, 'w') as f:
-            json.dump(tables, f, indent=4)
-    
-    else:
-        md = ""
-        for tbl in tables:
-            md += f"### Page {tbl['page']} — {tbl['title']}\n\n"
-            df = pd.DataFrame(tbl['rows'], columns=tbl['headers'])
-            md += tabulate(df, headers='keys', tablefmt='github') + "\n\n"
-        with open(out_file, 'w') as f:
-            f.write(md)
-    
-    return out_file
+def process_pdf(pdf_path, pages, output_format, ocr):
+    tempdir = tempfile.mkdtemp()  # Create a unique temporary directory
+    try:
+        scanned = is_scanned(pdf_path, page_no=pages[0] - 1)
+        if scanned:
+            tables = extract_tables_scanned(pdf_path, pages, ocr)
+        else:
+            tables = extract_tables_digital(pdf_path, pages)
+
+        if not pages:
+            raise ValueError(f"No valid pages to process in {pdf_path}")
+
+        base = os.path.splitext(os.path.basename(pdf_path))[0]
+        out_file = f"{base}_tables.{ 'json' if output_format=='json' else 'md' }"
+
+        if output_format == 'json':
+            with open(out_file, 'w') as f:
+                json.dump(tables, f, indent=4)
+        else:
+            md = ""
+            for tbl in tables:
+                md += f"### Page {tbl['page']} — {tbl['title']}\n\n"
+                df = pd.DataFrame(tbl['rows'], columns=tbl['headers'])
+                md += tabulate(df, headers='keys', tablefmt='github') + "\n\n"
+            with open(out_file, 'w') as f:
+                f.write(md)
+
+        return out_file
+    finally:
+        shutil.rmtree(tempdir, ignore_errors=True)  # Clean up temporary directory
 
 @click.command()
 @click.option('--input-dir', '-i', type=click.Path(exists=True), required=True, help='Directory with PDF files')
