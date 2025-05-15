@@ -11,25 +11,6 @@ import json
 import pandas as pd
 from tabulate import tabulate
 
-#Add a check to validate the page numbers before processing:
-def validate_pages(pdf_path, pages):
-    print(f"Processing pages: {pages}")
-    doc = fitz.open(pdf_path)
-    total_pages = doc.page_count
-    return [p for p in pages if 1 <= p <= total_pages]
-# Function to parse pages (range like 1-3,5)
-# Ensure temporary files are properly closed and deleted after use.
-import shutil
-import tempfile
-import fitz  # Assuming PyMuPDF is being used for PDF handling
-
-tempdir = tempfile.mkdtemp()
-try:
-    # Your processing code here
-    pass  # Placeholder for actual processing code
-finally:
-    shutil.rmtree(tempdir, ignore_errors=True)
-
 # Add a check to validate the page numbers before processing:
 def validate_pages(pdf_path, pages):
     doc = fitz.open(pdf_path)
