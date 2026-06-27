@@ -47,6 +47,16 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Streamlit Viewer
+
+Launch the table viewer to inspect extracted JSON output in the browser:
+
+```bash
+streamlit run app.py
+```
+
+The app will load `Document2_tables.json` from the project root by default, or you can upload any compatible JSON output file.
+
 ### Basic Usage
 
 ```bash

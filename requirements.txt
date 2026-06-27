@@ -1,7 +1,8 @@
 PyMuPDF
-camelot-py
+camelot-py[cv]
 opencv-python
 paddleocr
+paddlepaddle
 pytesseract
 Pillow
 pandas
@@ -10,5 +11,5 @@ tabulate
 click
 joblib
 requests
-paddlepaddle
-dotenv
+python-dotenv
+streamlit
